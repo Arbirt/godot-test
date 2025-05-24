@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://6vmtfvmrk7rh"]
+
+[ext_resource type="Texture2D" uid="uid://r6lxaecjydhm" path="res://assets/customSprites/CelesteMovingTerrain.png" id="1_7dwqp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1b016"]
+size = Vector2(16, 40)
+
+[node name="Platform" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_7dwqp")
+region_enabled = true
+region_rect = Rect2(16, 19, 16, 41)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1b016")
